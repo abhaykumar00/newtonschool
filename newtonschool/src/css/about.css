@@ -2,9 +2,49 @@
     background-color: azure;
 }
 .about{
-    width: 80%;
+    margin: 10px 20px 20px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.campus{
+    width: 90vw;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.layer:hover{
+    background-color: rgba(254,254,254,0.2);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.sub-about{
+   height: 100vh;
+    width: 100%;
+    background-image: url(../image/back.jpg);
+    background-position: center;
+    background-size: cover;
     
 }
