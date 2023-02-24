@@ -14,13 +14,13 @@
     <title>AKTU</title>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <nav>
+    
+    <nav class="nav-heading" >
         <a href="index.html">
             <img src="../image/logo.jfif">
         </a>
         <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -28,8 +28,9 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+
     </nav>
+    <h1>Contact Us</h1>
     <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57638.00851722274!2d78.64042000000002!3d25.459133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39777701fa29d96b%3A0x274c37abc80c1ad1!2sBundelkhand%20Institute%20Of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sus!4v1677071534130!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -37,20 +38,41 @@
         <div class="row">
             <div class="contact-col">
                 <div>
-                    <i class="fa fa-home"></i>
+                    <img src="../image/homeicon.png">
                     <span>
-                        <h5>Bundelkhand Institute Of Engineering & Technology, Kanpur Road NH-25 JHANSI (U.P)-284128</h5>
+                        <h5>Bundelkhand Institute Of Engineering & Technology</h5>
+                        <p>Kanpur Road NH-25 JHANSI (U.P)-284128</p>
                     </span>
                 </div>
+                <div>
+                    <img src="../image/call.png">
+                    <span>
+                       <h5>+91987654321</h5>
+                       <p>Monday to Friday</p>
+                    </span>
+                </div>
+                <div>
+                    <img src="../image/mail.png">
+                    <span>
+                       <h5>info@bietjhansi.co.in</h5>
+                       <p>Email Us your Query</p>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter your Email Address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-    <h4>Address</h4>
-    <p ></p>
+   
     </div>
-    <div class="phone">
-    <h4 >Phone Number</h4>
-    <p>0510-2980211, 2980212</p>
-</div>
+    
 </body>
 </html>

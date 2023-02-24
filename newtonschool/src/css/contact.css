@@ -2,6 +2,9 @@
     margin-bottom: 30px;
     margin-left: 20px;
 }
+h1{
+    text-align: center;
+}
 .phone{
     margin-top: 30px;
     margin-left: 20px;
@@ -17,4 +20,37 @@
 }
 .location iframe{
     width: 100%;
+}
+.contact-us{
+    width: 90%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-col input ,.contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+.contact-col button{
+    background-color: rgb(222, 66, 66);
+}
+.contact-col img {
+    margin-right: 20px;
+   
 }
