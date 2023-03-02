@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/course.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    
+    
     <title>AKTU University</title>
 </head>
 <body>
     
     <section class="header">
+        <div class="menu" id="menuImage">
+            <img src="../image/menu.png"   onclick="myFunction()">
+        </div>
     <nav class="nav-heading">
         <a href="index.html">
-            <img src="../image/logo.jfif">
+            <img src="../image/logo-Copy.jpg">
         </a>
         <div class="nav-links" id="navLinks">
-            
-            <ul>
+            <img src="../image/close.png" id="hideMenu" onclick="hideMenu()" >
+            <ul id="nav-links-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./course.html">Course</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
-       
     </nav>
    
       <div class="text-box">
@@ -41,13 +45,15 @@
     
     </section>
     <script>
-        var navLinks=document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right="0";
-
+        function myFunction() {
+            document.getElementById("menuImage").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+            document.getElementById("navLinks").style.display = "block";
+            document.getElementById("nav-links-ul").style.backgroundColor="rgb(232, 113, 113)";
         }
         function hideMenu(){
-            navLinks.dataset.right="-200px";
+           document.getElementById("navLinks").style.display = "none";
+           document.getElementById("menuImage").style.display = "block";
         }
     </script>
 
@@ -133,7 +139,7 @@
             </div>
         </div>
         <div class="testimonials-col">
-            <img src="../image/dipika.jfif">
+            <img src="../image/dipika.jpg">
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p>
                 <h3>Deepika</h3>

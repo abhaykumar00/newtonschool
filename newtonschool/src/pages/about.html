@@ -15,13 +15,16 @@
 </head>
 <body>
     <section class="header">
+        <div class="menu" id="menuImage">
+            <img src="../image/menu.png"   onclick="myFunction()">
+        </div>
     <nav class="nav-heading">
         <a href="index.html">
-            <img src="../image/logo.jfif">
+            <img src="../image/logo-Copy.jpg">
         </a>
         <div class="nav-links" id="navLinks">
-           
-            <ul>
+            <img src="../image/close.png" id="hideMenu" onclick="hideMenu()" >
+            <ul id="nav-links-ul">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="./course.html">Course</a></li>
@@ -48,5 +51,18 @@
             </div>
         </div>
     </div>
+    </section>
+    <script>
+        function myFunction() {
+            document.getElementById("menuImage").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+            document.getElementById("navLinks").style.display = "block";
+            document.getElementById("nav-links-ul").style.backgroundColor="rgb(232, 113, 113)";
+        }
+        function hideMenu(){
+           document.getElementById("navLinks").style.display = "none";
+           document.getElementById("menuImage").style.display = "block";
+        }
+    </script>
 </body>
 </html>

@@ -14,14 +14,16 @@
     <title>AKTU</title>
 </head>
 <body>
-    
+    <div class="menu" id="menuId">
+        <img src="../image/menu.png"   onclick="myFunction()">
+    </div>
     <nav class="nav-heading" >
         <a href="index.html">
-            <img src="../image/logo.jfif">
+            <img src="../image/logo-Copy.jpg">
         </a>
         <div class="nav-links" id="navLinks">
-            
-            <ul>
+            <img src="../image/close.png" id="hideMenu" onclick="hideMenu()" >
+            <ul id="nav-links-ul">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./course.html">Course</a></li>
@@ -73,6 +75,19 @@
     </section>
    
     </div>
-    
+    <script>
+        function myFunction() {
+            document.getElementById("menuId").style.display = "none";
+            document.getElementById("hideMenu").style.display = "block";
+            document.getElementById("navLinks").style.display = "block";
+            document.getElementById("nav-links-ul").style.flex = "4";
+            document.getElementById("nav-links-ul").style.backgroundColor="rgb(232, 113, 113)";
+        }
+        function hideMenu(){
+           document.getElementById("navLinks").style.display = "none";
+           document.getElementById("menuId").style.display = "block";
+        }
+    </script>
+
 </body>
 </html>
